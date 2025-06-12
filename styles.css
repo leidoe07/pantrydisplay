@@ -1,0 +1,881 @@
+/* Define CSS Variables for the Color Scheme */
+/*Settings page tabs*/
+#settings-tabs{
+    /* font-family: "Quicksand", sans-serif !important; */
+    color:#952
+  }
+  
+  :root {
+    --dark-purple: #1a0029ff;
+    --grape: #6930c3ff;
+    --medium-slate-blue: #7374d4ff;
+    --alice-blue: #eef4fbff;
+    --maya-blue: #54beffff;
+  }
+  
+  /* Global Styles */
+  html, body {
+    height: 100%;
+  }
+  li {
+    display: inline;
+  }
+  p {
+    font-family: "Quicksand", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .quicksand-400 {
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+  }
+  .nav {
+    background-color: #1A0029;
+    color: #54beff;
+    font-family:"Quicksand", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    align-items: center;
+  }
+  
+  .xyz {
+    background-size: auto;
+    text-align: center;
+    padding-top: 100px;
+  }
+  
+  .btn-primary {
+    background-color:  #54beff;
+    border-color: #deeff8;
+    color: #e6f5ff;
+    font-family: "Quicksand", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .btn-circle {
+    border-radius: 50%;
+    border: #1A0029;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .btn-circle.btn-sm {
+    width: 30px;
+    height: 30px;
+    padding: 6px 0;
+    font-size: 8px;
+  }
+  
+  .btn-circle.btn-md {
+    width: 50px;
+    height: 50px;
+    padding: 7px 10px;
+    font-size: 10px;
+  }
+  
+  .btn-circle.btn-xl {
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+    font-size: 12px;
+  }
+  
+  .scrollmenu {
+    display: flex;
+    overflow-x: auto;
+    gap: 10px;
+    padding: 10px;
+    white-space: nowrap;
+    
+  }
+  
+  footer {
+    position: static;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    background-color: #f8f9fa;
+  }
+  
+  .dot {
+    width: 100%; 
+    max-width: 700px;   
+    height: auto;      
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+  }
+  
+  .our-nav {
+  
+    background-color: #1A0029;
+    color: #54beff;
+    font-family: "Quicksand", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+      
+  
+  
+  
+  
+  body {
+      background-color: #f9f9f9;
+      font-family: 'Arial', sans-serif;
+      width: 100%;
+        
+      }
+      
+      .tinder {
+        position: relative;
+        width: 100%;
+        max-width: 400px;
+        margin: 50px auto;
+      }
+      
+      .tinder--cards { 
+  
+        position: relative;
+        width: 100%;
+        height: 500px;
+  
+      }
+  
+      .tinder--card {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        transition: transform 0.3s ease, opacity 0.3s ease;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        overflow:scroll;
+      }
+  
+      .tinder--card img {
+        width: 100%;
+        height: auto;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+      }
+  
+      .tinder--card h3 {
+        margin: 20px;
+        font-size: 1.5rem;
+        color: #333;
+      }
+  
+      .tinder--card p {
+        margin: 20px;
+        font-size: 1rem;
+        color: #666;
+      }
+  
+      .tinder--buttons {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 20px;
+      }
+  
+      .tinder--buttons button {
+        background-color: #fff;
+        border: none;
+        border-radius: 50%;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+        width: 60px;
+        height: 60px;
+        font-size: 1.5rem;
+        color: #333;
+        cursor: pointer;
+        transition: background-color 0.3s ease, transform 0.3s ease;
+      }
+  
+      .tinder--buttons button:hover {
+        background-color: #f1f1f1;
+        transform: scale(1.1);
+      }
+  
+      .tinder--card.moving {
+        transition: none;
+      }
+  
+      .tinder--card.removed {
+        display: none;
+      }
+  
+      .swipepad {
+        margin-trim: 7;
+  
+      }
+  
+  /* Apply the Color Scheme */
+  body {
+    background-color: var(--alice-blue);
+    color: var(--dark-purple);
+  }
+  
+  .navbar {
+    background-color: var(--grape);
+  }
+  
+  .nav-link {
+    color: var(--alice-blue);
+  }
+  
+  .nav-link:hover {
+    color: var(--maya-blue);
+  }
+  
+  footer {
+    background-color: var(--medium-slate-blue);
+    color: var(--alice-blue);
+  }
+  
+  .dot {
+    background-color: var(--grape);
+  }
+  
+  .catbox {
+    border-color: var(--dark-purple);
+    background-color: var(--alice-blue);
+  }
+  .navbar-brand {
+    color: var(--alice-blue);
+  }
+  .navbar-brand:hover {
+    color: var(--alice-blue);
+  }
+  
+  .search {
+   
+    color: var(--grape);
+  
+  
+  }
+  
+  .title {
+    color: var(--grape);
+    font-family: "Quicksand", sans-serif;
+    font-weight: 1000;
+    font-style: initial;
+    text-align: center;
+  
+  }
+  
+  .sub-title {
+    color: var(--medium-slate-blue);
+    font-family: "Quicksand", sans-serif;
+    font-weight: 1000;
+    font-style: initial;
+  }
+  
+  .ingred-pics{
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+  }
+  
+  .recip-pics{
+    border-radius: 2%;
+    width: 90%;
+    height: 30%;
+  }
+  
+  .my-container{
+    position: relative; 
+    width: 400px; 
+    background: rgb(183, 108, 226);
+    padding: 20px 30px; 
+    border: 1px solid #dc81ed; 
+    border-radius: 5px; 
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: auto;
+  
+  }
+  .my-container .text{ 
+    font-size: 25px;
+    color: #666;
+    font-weight: 500;
+  }
+  
+  .my-container .edit{ 
+    position: absolute; 
+    right: 10px;
+    top: 5px; 
+    font-size: 16px;
+    color: #666;
+    font-weight: 500;
+  }
+  .my-container .post{ 
+    display: none; 
+  
+  }
+  .my-container .edit:hover{ 
+   text-decoration: underline; 
+  
+  }
+  
+  .my-container .star-widget input { 
+  
+    display: none;
+  
+  }
+  
+  .star-widget label{ 
+    font-size: 40px; 
+    color: #444;
+    padding: 10px; 
+    float: right;
+    transition: all 0.2s ease;
+  
+  }
+   input:not(:checked) ~ label:hover
+   input:not(:checked) ~ label:hover ~ label
+   {
+     color: #fd4; 
+  
+  
+  }
+  
+  input:checked ~ label {
+    color: #fd4;
+  
+  
+  }
+  input#rat-5:checked ~ label {
+    color: #fe7;
+    text-shadow: 0 0 20px #952; 
+  
+    
+  
+  }
+  
+  
+  
+  
+  input#rate-1:checked ~  header::before{
+  
+    content: "I hated it 😣"; 
+    
+    
+  }
+  input#rate-2:checked ~  header::before{
+    content: "I did not like it 🤨"; 
+  }
+  input#rate-3:checked ~  header::before{
+    content: "It was mediocre 😐"; 
+  }
+  input#rate-4:checked ~  header::before{
+    content: "I really liked it 😁"; 
+  }
+  input#rate-5:checked ~  header::before{
+    content: "It was awesome 😜"; 
+  }
+  
+  .my- container form{ 
+    display: none; 
+  
+  }
+  
+  
+  .stars {
+    display: inline-block;
+    font-size: 24px;
+    letter-spacing: 2px;
+    background: linear-gradient(
+      90deg,
+      gold calc(var(--rating) / 5 * 100%),
+      lightgray calc(var(--rating) / 5 * 100%)
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+     
+  
+  input:checked ~ form{ 
+    display: block; 
+  }
+  
+  
+  .form-header{
+    width: 100%;
+    font-size: 25px; 
+    color: #fe7; 
+    font-weight: 500; 
+    margin: 5px 0 20px 0; 
+    text-align: center; 
+    transition: all 0.2s ease;
+  }
+  
+  
+  
+  
+  .my-form .textarea{ 
+    height: 100px;
+    width: 100%; 
+    overflow: hidden;
+  }
+  
+  .my-form .textarea textarea{ 
+    height: 100%;
+    width: 100%; 
+    outline: none;
+    border: 1px solid #333; 
+    background: #e4e0e4;
+    padding: 10px; 
+    font-size: 17px; 
+    resize: none;
+    
+  }
+  
+  .my-form .btn{ 
+    height: 45px;
+    width: 100%;
+    margin: 15px 0; 
+  
+  }
+  
+  .my-form .btn button{ 
+    height: 50px;
+    width: 100%; 
+    border: 1px solid #dc81ed; 
+    outline: none;
+    background: #eee9ee; 
+    color: #999; 
+    font-size: 17px; 
+    font-weight: 500; 
+    text-transform: uppercase;
+    cursor: pointer; 
+  }
+  .my-form .btn button:hover{
+    background: #1b1b1b;
+  
+  } 
+  .post {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  } 
+  
+  .bottom-right {
+    position: absolute;
+    bottom: 0;
+    right: 0; 
+  }
+  /* this is the code for the like and dislike feature  */
+  
+  
+  .like-button, .dislike-button {
+    background-color: #ffffff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+  
+  }
+  .like-button.active, .dislike-button.active {
+    background-color: #ffffff;
+    color: #54beff;
+  }
+  .count {
+    margin-left: 5px;
+  } 
+  
+  
+  
+  .review-form {
+    padding: 1rem;
+    margin-top: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #ccc;
+    background-color: var(--form-bg); /* uses CSS variable */
+  }
+  
+  
+  body.light-mode {
+    --form-bg: #fff;
+  }
+  
+  /* Dark Mode */
+  body.dark-mode {
+    --form-bg: #1e1e1e;
+    
+  }
+  
+  
+  .liked {
+      color: blue;
+  }
+  
+  .disliked{
+      color: red;
+  }
+  
+  button{
+    cursor: pointer;
+    outline: 0;
+    color: #AAA;
+  
+  }
+  
+  .btn:focus {
+    outline: none;
+  }
+  
+  .green{
+    color: green;
+  }
+  
+  .red{
+    color: red;
+  }
+  
+  
+  
+  
+  
+  @media (max-width: 600px) {
+    .dot { max-width: 300px; }
+  }
+  
+  @media (max-width: 768px) {
+    .dot { max-width: 400px; }
+  }
+  
+  
+  @media (max-width: 600px) {
+    .dot { max-width: 300px; }
+  }
+  
+  @media (max-width: 768px) {
+    .dot { max-width: 400px; }
+  }
+  
+  @media (max-width: 992px) {
+    .dot { max-width: 500px; }
+  }
+  
+  @media (max-width: 1200px) {
+    .dot { max-width: 600px; }
+  }
+  
+  @media (max-width: 412px) {
+    .dot { max-width: 400px; }
+  }
+  
+  @media (max-width: 344px) {
+    .dot { max-width: 300px; }
+  }
+  .smaller-label{
+    font-size: 10px;
+  
+  }
+  
+  
+  
+  /* Add ingredients page */
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+  }
+  
+  .add-ing-container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .header h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .header p {
+    font-size: 16px;
+    color: #555;
+  }
+  
+  /* Tabs */
+  .tabs {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .tab {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: #eee8f3;
+    transition: background-color 0.3s ease;
+  }
+  
+  .tab.active {
+    font-weight: bold;
+    border: 2px solid rgb(67, 33, 123) ;
+    background-color: var(--grape);
+    color: white;
+  }
+  
+  .PillList-item {
+    cursor: pointer;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 20px;
+    margin: 0 12px 12px 0;
+    text-transform: capitalize;
+  }
+  
+  .PillList-item input[type="checkbox"] {
+    display: none;
+  }
+  
+  .PillList-label {
+    border-radius: 20px;
+    display: block;
+    padding: 7px 28px;
+    text-decoration: none;
+  }
+  
+  
+  /* Colors for the ingredients */
+  .fruit-pill {
+    border-radius: 20px;
+    color:#370f08;
+    background-color: #ffe4e1;
+  }
+  .fruit-pill input[type="checkbox"]:checked + .PillList-label {
+    background-color: #d46268;
+    color: #f9f9f9;
+  }
+  
+  .herb-pill {
+    background-color: #e0f5e0;
+    border-radius: 20px;
+    color:#124312;
+  }
+  
+  .herb-pill input[type="checkbox"]:checked + .PillList-label {
+    background-color: #7bbf7b;
+    color: #f9f9f9;
+  }
+  
+  .grain-pill {
+    border-radius: 20px;
+    background-color: #f8f3d7;
+    color:#60522f;
+  }
+  .grain-pill input[type="checkbox"]:checked + .PillList-label {
+    background-color: #e1d172;
+    color: #f9f9f9;
+  }
+  
+  .baking-pill {
+    border-radius: 20px;
+    background-color: #ecb6d7;
+    color:#370f08;
+  }
+  .baking-pill input[type="checkbox"]:checked + .PillList-label {
+    background-color: #c779a9;
+    color: #f9f9f9;
+  
+  }
+  .alternative-pill {
+    border-radius: 20px;
+    background-color: #cb9de5;
+    color:#3e1b52;
+  }
+  .alternative-pill input[type="checkbox"]:checked + .PillList-label {
+    background-color: #9e6fba ;
+    color: #f9f9f9;
+  }
+  .dairy-pill {
+    border-radius: 20px;
+    background-color: #beeafa6f;
+    color:#39545d;
+  }
+  
+  .dairy-pill input[type="checkbox"]:checked + .PillList-label {
+    background-color: #81b4c5 ;
+    color: #f9f9f9;
+  }
+  
+  .liquor-pill {
+    border-radius: 20px;
+    background-color: #d1c1ac;
+    color:#382b22;
+  }
+  
+  .liquor-pill input[type="checkbox"]:checked + .PillList-label {
+    background-color: #605c56a5 ;
+    color: #f9f9f9;
+  }
+  
+  .legume-pill {
+    border-radius: 20px;
+    background-color: #bdd6b8;
+    color:#2a3228;
+  }
+  
+  .legume-pill input[type="checkbox"]:checked + .PillList-label {
+    background-color: #71926b ;
+    color: #f9f9f9;
+  }
+  
+  .meat-pill {
+    border-radius: 20px;
+    background-color: #d6bdb8;
+    color:#271f1b;
+  }
+  
+  .meat-pill input[type="checkbox"]:checked + .PillList-label {
+    background-color: rgb(153, 125, 112) ;
+    color: #f9f9f9;
+  }
+  
+  .nut-pill {
+    border-radius: 20px;
+    background-color: #ceb39c;
+    color:#362e25;
+  }
+  
+  .nut-pill input[type="checkbox"]:checked + .PillList-label {
+    background-color: #a7917d ;
+    color: #f9f9f9;
+  }
+  
+  .oil-pill {
+    border-radius: 20px;
+    background-color: #f3edc1;
+    color:#4c4a3c;
+  }
+  
+  .oil-pill input[type="checkbox"]:checked + .PillList-label {
+    background-color: #bdb577 ;
+    color: #f9f9f9;
+  }
+  
+  
+  /* redo noodles */
+  .noodles-pill {
+    border-radius: 20px;
+    background-color: #d3c99c;
+    color:#4c4a3c;
+  }
+  
+  .noodles-pill input[type="checkbox"]:checked + .PillList-label {
+    background-color: #d0d198 ;
+    color: #f9f9f9;
+  }
+  /* redo^^ */
+  
+  .root-pill {
+    border-radius: 20px;
+    background-color: #d5e4ac;
+    color:#3a3e28;
+  }
+  
+  .root-pill input[type="checkbox"]:checked + .PillList-label {
+    background-color: #a4b278 ;
+    color: #f9f9f9;
+  }
+  
+  .sauce-pill {
+    border-radius: 20px;
+    background-color: #b98bad;
+    color:#2f1e2a;
+  }
+  
+  .sauce-pill input[type="checkbox"]:checked + .PillList-label {
+    background-color: #74536d ;
+    color: #f9f9f9;
+  }
+  
+  .seafood-pill {
+    border-radius: 20px;
+    background-color: #d28075a5;
+    color:#52312d;
+  }
+  
+  .seafood-pill input[type="checkbox"]:checked + .PillList-label {
+    background-color: #c6786e ;
+    color: #f9f9f9;
+  }
+  
+  .spice-pill {
+    border-radius: 20px;
+    background-color: #e9e1e1;
+    color:#2d2b2b;
+  }
+  
+  .spice-pill input[type="checkbox"]:checked + .PillList-label {
+    background-color: #afabaa ;
+    color: #f9f9f9;
+  }
+  
+  .vegetable-pill {
+    border-radius: 20px;
+    background-color: #a3ba9a;
+    color:#273129;
+  }
+  
+  .vegetable-pill input[type="checkbox"]:checked + .PillList-label {
+    background-color: #487538 ;
+    color: #f9f9f9;
+  }
+  .vinegar-pill {
+    border-radius: 20px;
+    background-color: #a374669b;
+    color:#2b2320;
+  }
+  
+  .vinegar-pill input[type="checkbox"]:checked + .PillList-label {
+    background-color: #5f4a43 ;
+    color: #f9f9f9;
+  }
+  /* End of Colors for the ingredients ^^ */
+  
+  .hidden {
+    display: none;
+  }
+  
+  /* Footer */
+  .footer {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .footer .btn {
+    border-radius: 8px;
+    padding: 10px 20px;
+  }
+  
+  .card-hi{
+    min-height: 200px;
+  }
+  
