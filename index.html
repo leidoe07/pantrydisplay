@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title> Pantryfy Swiper</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-  <link rel="stylesheet" href="/static/styles.css">
+  <link rel="stylesheet" href="styles.css">
   
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -29,14 +29,7 @@ body {
 img {
   pointer-events: none
 }
-</style>        
-</head>                    
 
-
-  
-
-
-  <style>
   body {
     margin: 0;
     padding: 0;
@@ -58,7 +51,127 @@ img {
 </head>
 
 <body class="">
-{% include "components/navbar.html.jinja" %}
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+          <!-- Brand Logo -->
+          <a class="navbar-brand" href="/">
+            <img src="/static/images/name_logo.png" alt="Pantryfy Logo" width="90" height="30"
+              class="d-inline-block align-top">
+      
+          </a>
+      
+          <!-- Toggler for Mobile View -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+      
+          <!-- Navbar Links -->
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <!-- Home Link -->
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="/">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house-fill"
+                    viewBox="0 0 16 16">
+                    <path
+                      d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L8 2.207l6.646 6.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293z" />
+                    <path d="m8 3.4 6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293z" />
+                  </svg>
+                  Home
+                </a>
+              </li>
+      
+              
+      
+             
+              <!-- Search Link -->
+              <li class="nav-item">
+                <a class="nav-link" href="/search">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search"
+                    viewBox="0 0 16 16">
+                    <path
+                      d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
+                  </svg>
+                  Search
+                </a>
+              </li>
+      
+              <!-- Add Ingredient Link -->
+              <li class="nav-item">
+                <a class="nav-link" href="/add_ingredient">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle"
+                    viewBox="0 0 16 16">
+                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
+                    <path
+                      d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4" />
+                  </svg>
+                  Add Ingredient
+                </a>
+              </li>
+            </ul>
+      
+      
+            <!-- Right-Side Links -->
+            <ul class="navbar-nav ms-auto">
+      
+            <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="/catalog">
+                  
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-egg-fried" viewBox="0 0 16 16">
+        <path d="M8 11a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/>
+        <path d="M13.997 5.17a5 5 0 0 0-8.101-4.09A5 5 0 0 0 1.28 9.342a5 5 0 0 0 8.336 5.109 3.5 3.5 0 0 0 5.201-4.065 3.001 3.001 0 0 0-.822-5.216zm-1-.034a1 1 0 0 0 .668.977 2.001 2.001 0 0 1 .547 3.478 1 1 0 0 0-.341 1.113 2.5 2.5 0 0 1-3.715 2.905 1 1 0 0 0-1.262.152 4 4 0 0 1-6.67-4.087 1 1 0 0 0-.2-1 4 4 0 0 1 3.693-6.61 1 1 0 0 0 .8-.2 4 4 0 0 1 6.48 3.273z"/>
+      </svg>
+                  
+                  Ingredient Catalog
+                </a>
+              </li>
+      
+      
+              
+               <!-- Saved Recipes Link -->
+              <li class="nav-item">
+                <a class="nav-link" href="/savedrecipes">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart-fill"
+                    viewBox="0 0 16 16">
+                    <path
+                      d="M8 1C4.686 1 2 3.686 2 7c0 3.314 3.686 6.686 6 8.314C10.314 13.686 14 10.314 14 7c0-3.314-2.686-6-6-6zm0 12.314C5.686 10.686 3 8.314 3 7c0-2.21 1.79-4 4-4s4 1.79 4 4c0 1.314-2.686 3.686-3 5.314z" />
+                  </svg>
+                  Saved Recipes
+                </a>
+              </li>
+      
+      
+      
+              {% if current_user.is_authenticated %}
+              <!-- Settings Dropdown -->
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Settings
+                </a>
+      
+                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                  <li>
+                    <p class="dropdown-item"> hi {{current_user.username}} </p>
+                  </li>
+                  <li><a class="dropdown-item" href="/settings">Settings</a></li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li><a class="dropdown-item" href="/logout">Logout</a></li>
+                </ul>
+              </li>
+              {% else %}
+              <!-- Login Link -->
+              <li class="nav-item">
+                <a class="nav-link" href="/signin">Login</a>
+              </li>
+              {% endif %}
+            </ul>
+          </div>
+        </div>
+      </nav>
 
   <!-- Flash Message Container -->
  
@@ -69,13 +182,12 @@ img {
   <div class="tinder">
   
     <div class="tinder--cards">
-      {% for recipe in recipe %}
+     
       <div class="tinder--card" data-id="{{ recipe['id'] }}">
-        <img src="{{ recipe['image'] }}" alt="{{ recipe['name'] }}">
-        <h3>{{ recipe['name'] }}</h3>
-        <p>{{ recipe['description'] }}</p>
+        <img src="https://d2rluq6rcpndy0.cloudfront.net/img/gochujang-noodles-2.jpeg" alt="{{ recipe['name'] }}">
+        <h3>Noodles</h3>
+        <p> These are delicious/p>
       </div>
-      {% endfor %}
       <div class="tinder--card" data-id="{{ recipe['id'] }}">
       <p class="text-center">no more recipes to show</p>
       </div>
@@ -90,7 +202,7 @@ img {
   </div>
 
 
-{%include "components/footer.html.jinja"%}
+
   
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
